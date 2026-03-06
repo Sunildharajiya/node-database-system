@@ -41,18 +41,20 @@ project
 
 Clone the repository:
 
-```
-
+```bash
+git clone git@github.com:Sunildharajiya/node-database-system.git
 ```
 
 Go to project directory:
 
-```
+```bash
+cd node-databse-system
 ```
 
 Install dependencies:
 
-``` npm install
+```bash
+npm install
 ```
 
 ---
@@ -61,28 +63,33 @@ Install dependencies:
 
 Create a ".env" file in the project root.
 
-```SECRET_KEY=your_secret_key_here
+```env
+SECRET_KEY=your_secret_key_here
 IV=your_initialization_vector_here
 ```
 ### Generate them using Node.js:
 
+use vscode terminal if you are using windos or mac 
+
 Generate secret key:
 
-```node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
+```bash
+node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
 ```
 Generate IV:
-```
+```bash
 node -e "console.log(require('crypto').randomBytes(16).toString('hex'))"
 ```
 ---
 
 Start Server
-```node server.js
+```bash
+node server.js
 ```
 
 Server will run at:
 
-http://localhost:10000
+`http://localhost:10000`
 
 ---
 
@@ -192,8 +199,4 @@ Future Improvements
 Author
 
 Sunil Dharajiya
-
-Freelancer and Web Developer
-Learning Backend Development and System Design
-
 ---
