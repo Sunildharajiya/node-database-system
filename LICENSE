@@ -20,14 +20,3 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-# enveronment variables
-Create a ".env" file in the project root.
-```
-SECRET_KEY=<your_genrated_secrate_key>
-```
-## Genrate SECRET_KEY
- for Genrate SECRET_KEY run this in terminal or cmd and pest genrated text in '.env' file
- 
-```bash
-node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
-```
