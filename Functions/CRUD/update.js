@@ -1,5 +1,5 @@
-import { readDB } from "./read.js";
-import { writeDB } from "./write.js";
+import { readDB } from "./readDB.js";
+import { writeDB } from "./writeDB.js";
 
 /* -------------------- UPDATE -------------------- */
 

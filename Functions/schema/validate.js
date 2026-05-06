@@ -1,6 +1,6 @@
 import { types } from "./schema-core.js";
-import { generateId } from "../utils/id.js";
-import { hashPass } from "../Encryption/bcrypt.js";
+import { generateId } from "../utilities/ID.js";
+import { hashPass } from "../Encryption/bcryption.js";
 
 export async function validate(schema, data, collectionData, options = {}) {
   const def = schema.definition;

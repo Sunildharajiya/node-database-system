@@ -1,7 +1,7 @@
 import { readDB } from "./readDB.js";
 import { writeDB } from "./writeDB.js";
 import { validate } from "../schema/validate.js";
-import { generateId } from "../utils/id.js";
+import { generateId } from "../utilities/ID.js";
 
 /* -------------------- CREATE -------------------- */
 
