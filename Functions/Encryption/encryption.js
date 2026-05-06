@@ -1,17 +1,11 @@
 // Import crypto module for encryption
 import crypto from "crypto";
-
-// Import dotenv to access environment variables
-import dotenv from "dotenv";
-
-dotenv.config();
-
+import env from 'dotenv'
+env.config()
 /* -------------------- CONFIGURATION -------------------- */
 
 // Encryption algorithm
 const algorithm = "aes-256-cbc";
-
-// Secret key from .env (must be 32 bytes hex)
 const secretKey = Buffer.from(process.env.SECRET_KEY, "hex");
 
 // Validate key length
@@ -19,10 +13,8 @@ if (secretKey.length !== 32) {
   throw new Error("SECRET_KEY must be 32 bytes (64 hex characters)");
 }
 
-
 /* -------------------- ENCRYPT FUNCTION -------------------- */
-
-export function encrypt(text) {
+ export function encrypt(text) {
 
   if (text === undefined || text === null) return text;
 
@@ -41,7 +33,7 @@ export function encrypt(text) {
 }
 
 
-/* -------------------- DECRYPT FUNCTION -------------------- */
+/* -------------------- DECRYPTION FUNCTION -------------------- */
 
 export function decrypt(text) {
 
