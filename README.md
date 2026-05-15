@@ -26,3 +26,6 @@ SECRET_KEY=<your_genrated_secrate_key>
 ```bash
 node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
 ```
+
+## Read documentation
+- [Model layer](Documentation/modelLayer.md)

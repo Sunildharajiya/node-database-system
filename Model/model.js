@@ -1,8 +1,10 @@
+// importimg crud functions
 import { create } from "../Functions/CRUD/create.js";
 import { update } from "../Functions/CRUD/update.js";
 import { remove } from "../Functions/CRUD/delete.js";
 import { readDB } from "../Functions/CRUD/readDB.js";
 
+//model layer
 export class Model {
   constructor(collection, schema) {
     this.collection = collection;
